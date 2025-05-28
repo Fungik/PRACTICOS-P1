@@ -2,11 +2,16 @@
 type
     TipoCaso = (realesIguales, realesDistintas, complejas)
     TipoRaices = record
-                    caso : TipoCaso;
-                    case caso of
-                        realesDistintas : (r1, r2 : real);
-                        realesIguales : (r : real);
-                        complejas : (parteReal, parteImaginaria : real);
+                    case caso : TipoCaso of
+                        realesDistintas : (
+                            r1, r2 : real
+                        );
+                        realesIguales : (
+                            r : real
+                        );
+                        complejas : (
+                            parteReal, parteImaginaria : real
+                        );
                     end;
 
 (* B *)
