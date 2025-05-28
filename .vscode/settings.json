@@ -1,4 +1,6 @@
 {
     "editor.wordBasedSuggestions": "off",
-    "java.selectionRange.enabled": false
+    "java.selectionRange.enabled": false,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "off"
 }

@@ -64,4 +64,4 @@ function dineroObtenidoPorPirata(pirata: TipoCI; anio: integer; b:Banda) : integ
 var 
     i : integer;
 begin
-    while i <= b.tope and 
+    while i <= b.tope and not ciIP
