@@ -17,7 +17,7 @@ type
 
 (* C *)
 
-//Procedimientos auxiliares
+//Procedimiento auxiliar
 procedure hayError (var resu : Nerr);
 begin
     resu.caso := error;
