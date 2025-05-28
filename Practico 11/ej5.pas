@@ -6,10 +6,13 @@ type
     Err = (diverr, reserr, argerr);
 
     Nerr = record
-            caso : Tipo;
-            case caso of
-                nat : (valor : Natural);
-                error : (err : Err);
+            case caso : Tipo of
+                nat : (
+                    valor : Natural
+                );
+                error : (
+                    err : Err
+                );
             end;
 
 (* C *)
