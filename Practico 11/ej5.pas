@@ -2,21 +2,14 @@
 type
     Natural = 0..maxint;
     Tipo = (nat, error);
-
     Err = (diverr, reserr, argerr);
-
     Nerr = record
             case caso : Tipo of
-                nat : (
-                    valor : Natural
-                );
-                error : (
-                    err : Err
-                );
+                nat : (valor : Natural);
+                error : (err : Err);
             end;
 
 (* C *)
-
 //Procedimiento auxiliar
 procedure hayError (var resu : Nerr);
 begin
