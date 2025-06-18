@@ -299,3 +299,24 @@ begin
 
     ultimaOcurrencia := pos;
 end;
+
+(* 6 *)
+const
+    MAXCOL = . . .; {entero mayor estricto que 0}
+    MAXFIL = . . .; {entero mayor estricto que 0}
+type
+    MatrizEnteros = array [1..MAXFIL, 1..MAXCOL] of integer;
+
+function buscarElementoMatriz(e:Integer; m:matrizEnteros):boolean;
+var
+    i : integer;
+    encontrado : boolean;
+begin
+    i := 1;
+    encontrado := false;
+
+    while (i <= MAXFIL) and (not buscarElemento(e, m[i])) do
+        i := i + 1;
+    
+    buscarElementoMatriz := (i <= MAXFIL);
+end;
